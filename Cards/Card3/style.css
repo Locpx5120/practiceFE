@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right, #d4fc79, #96e6a1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card{
+    width: 190px;
+    height: 254px;
+    border: 1px solid rgb(0, 0, 0);
+    background: #d5db9b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 15px 15px 10px rgba(45, 45, 45, 0.5);
+}
+.card__img{
+    width: 60%;
+    
+}
+.card__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.card__img, .card__name, .card__role, .card__social{
+    transition: all 2s;
+}
+
+.card__role{
+    color: rgb(16, 138, 246);
+}
+.card__social{
+    margin-top: 10px;
+    display: none;
+    opacity: 0;
+}
+
+.card__social i{
+    margin: 2px 15px;
+    cursor: pointer;
+
+}
+
+
+.card:hover .card__img,
+.card:hover .card__name,
+.card:hover .card__role{
+    transform: translateY(-15px);
+}
+
+.card:hover .card__social{
+    display: flex;
+    opacity: 1;
+}
+

@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right, #e66465, #9198e5);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 350px;
+    height: 264px;
+    border-radius: 4px;
+    display: flex;
+    gap: 5px;
+    padding: 5px;
+    border: 1px solid #180109;
+    
+}
+
+.card p {
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.card p:hover{
+    flex: 4;
+}
+
+.card span{
+    transform: rotate(-90deg);
+    min-width: 15px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.card p:hover span{
+    transform: rotate(0);
+}
